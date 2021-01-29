@@ -17,7 +17,7 @@ import { hasAnyAuthority } from 'app/shared/auth/private-route';
 import Footer from 'app/components/footer/Footer';
 import Landing from '../../components/landing/landing';
 import AboutCard from '../../components/cards/aboutCard';
-import BountyItem from '../../components/itemRow/bounttem';
+import BountyItem from '../../components/itemRow/bountyItem';
 import ButtonOutline from 'app/components/buttons/buttonOutline';
 
 export interface IHomeProp extends StateProps, DispatchProps, RouteComponentProps {};
