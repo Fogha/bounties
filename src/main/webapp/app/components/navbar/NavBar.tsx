@@ -1,5 +1,5 @@
 import React from 'react';
-import './nav.scss';
+import './nav.scss'
 import { makeStyles } from '@material-ui/core/styles';
 
 import AppBar from '@material-ui/core/AppBar';
@@ -56,13 +56,6 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     color: theme.palette.text.hint
   },
-  drawerContainer: {
-    paddingTop: theme.spacing(2),
-    paddingLeft: theme.spacing(2),
-    paddingRight: theme.spacing(3),
-    width: 300,
-  },
-
 }));
 
 export default function NavBar(props) {
@@ -99,7 +92,7 @@ export default function NavBar(props) {
   };
 
   return (
-    <AppBar position="static" color="transparent" elevation={0} className="menuBar">
+    <AppBar position="static" color="transparent" elevation={0} className="navbar">
       <Toolbar className={classes.toolbar}>
         <Link href="#" color="primary" underline="none" variant="h5" className={classes.brand}>
           {getBrand()}
@@ -118,7 +111,7 @@ export default function NavBar(props) {
         </IconButton>
       </Toolbar>
       <Drawer anchor="left" open={state.open} onClose={toggleDrawer(false)}>
-        <div className={classes.drawerContainer}>
+        <div className='drawerContainer'>
           <Box mb={1} ml={2} pb={2} border={1} borderTop={0} borderLeft={0} borderRight={0} borderColor="background.emphasis">
             <Link href="#" color="primary" underline="none" variant="h5" className={classes.linkBrand}>
               {getBrand()}

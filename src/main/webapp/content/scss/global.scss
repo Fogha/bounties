@@ -12,7 +12,7 @@ $grey-color: #eef2f7;
   height: 2.5rem;
   border: none;
   border-radius: 0.5rem;
-  padding: 0.3rem 0.7rem;
+  padding: 0.3rem 1rem;
   margin: 0.5rem 0;
 
   &__white {
@@ -38,6 +38,7 @@ $grey-color: #eef2f7;
     border-radius: 4rem;
     color: $primary-color;
     transition: all 0.5s;
+    padding: 0 1rem;
 
     &:hover,
     &:active {
